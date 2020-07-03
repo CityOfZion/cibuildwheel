@@ -47,7 +47,7 @@ jobs:
 
       - run:
           name: Prepare the environment.
-          command: bash .circleci/prepare.sh
+          command: choco install vcpython27 -f -y && bash .circleci/prepare.sh
       - run:
           name: Test.
           command: venv/bin/python ./bin/run_tests.py
