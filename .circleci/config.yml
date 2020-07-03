@@ -64,6 +64,10 @@ jobs:
       - run:
           name: Prepare the environment.
           command: bash .circleci/prepare-win.sh
+      - run:
+          name: Test.
+          command: venv/Scripts/python ./bin/run_tests.py
+          no_output_timeout: 30m
 
 workflows:
   version: 2
