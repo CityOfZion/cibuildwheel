@@ -58,7 +58,7 @@ jobs:
       name: win/default
       shell: powershell.exe
     environment:
-      PYTHONHTTPSVERIFY=0
+      PYTHONHTTPSVERIFY: 0
       PYTHON: python
     steps:
       - checkout
